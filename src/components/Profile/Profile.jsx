@@ -1,10 +1,8 @@
 const Profile = ({ name, tag, location, image, stats }) => {
-  const { followers, views, likes } = stats;
-
   return (
     <div>
       <div>
-        <img width={250} src={image} alt='User avatar' />
+        <img src={image} alt={name} />
         <p>{name}</p>
         <p>@{tag}</p>
         <p>{location}</p>
@@ -12,15 +10,15 @@ const Profile = ({ name, tag, location, image, stats }) => {
       <ul>
         <li>
           <span>Followers</span>
-          <span>{followers}</span>
+          <span>{stats.followers}</span>
         </li>
         <li>
           <span>Views</span>
-          <span>{views}</span>
+          <span>{stats.views}</span>
         </li>
         <li>
           <span>Likes</span>
-          <span>{likes}</span>
+          <span>{stats.likes}</span>
         </li>
       </ul>
     </div>
