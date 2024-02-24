@@ -1,10 +1,11 @@
+/* отступы и границы контейнера с таблицей */
 .transactionContainer {
   margin: 20px auto;
-  border-top: 2px solid rgb(119, 118, 118);
+  border-top: 2px solid gray; /* разделяющая задания полоса */
   width: 100%;
   padding: 20px 0;
 }
-
+/* стили таблицы */
 .transactionTable {
   table-layout: fixed;
   width: 100%;
@@ -13,25 +14,26 @@
   max-width: 800px;
   margin: 0 auto;
 }
-
+/* стили для заголовка таблицы */
 .transactionHead {
   background-color: #000;
   color: #fff;
   font-size: 18px;
 }
-
+/* стили для ячеек таблицы */
 .transactionContent {
-  border: 2px solid black;
+  /* Равномерная ширина на 3 столбца, с учетом границы */
+  width: calc(33.33% - 4px);
+  /* сетка таблицы */
+  border: 1.5px solid black;
+  /* отступ внутри столбцов */
+  padding: 8px;
   text-align: center;
   font-size: 16px;
   text-transform: capitalize;
 }
 
+/* стиль для четных строк таблицы */
 .transactionRow:nth-child(even) {
   background-color: rgb(206, 206, 206);
-}
-th,
-td {
-  padding: 0;
-  vertical-align: top;
 }

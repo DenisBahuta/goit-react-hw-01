@@ -20,7 +20,7 @@ const FriendList = ({ friends }) => {
   );
 };
 
-// Опис типів пропсів компонента
+// Описание типов пропсов компонента FriendList
 FriendList.propTypes = {
   friends: PropTypes.arrayOf(
     PropTypes.shape({

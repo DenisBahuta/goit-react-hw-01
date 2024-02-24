@@ -19,10 +19,10 @@ const FriendListItem = ({ avatar, name, isOnline }) => {
   );
 };
 
-// Опис типів пропсів компонента
+// Описание типов пропсов компонента FriendListItem
 FriendListItem.propTypes = {
-  avatar: PropTypes.string,
-  name: PropTypes.string,
+  avatar: PropTypes.string.isRequired,
+  name: PropTypes.string.isRequired,
   isOnline: PropTypes.bool.isRequired,
 };
 
