@@ -1,0 +1,21 @@
+.friendCard {
+  padding: 12px;
+  text-align: center;
+}
+.friendAvatar {
+  margin-top: 4px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.friendName {
+  font-size: 30px;
+  margin-top: 24px;
+}
+.Online {
+  color: green;
+  font-size: 20px;
+}
+.Offline {
+  color: red;
+  font-size: 20px;
+}

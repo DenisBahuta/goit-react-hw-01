@@ -1,13 +1,16 @@
-import FriendListItem from "../Friends/FriendListItem";
+import FriendListItem from "./FriendListItem";
 import PropTypes from "prop-types";
+
+import css from "./FriendList.module.css";
+import clsx from "clsx";
 
 const FriendList = ({ friends }) => {
   return (
-    <div>
-      <ul>
+    <div className={clsx(css.friendListContainer)}>
+      <ul className={css.friendListGallery}>
         {friends.map((friend) => {
           return (
-            <li key={friend.id}>
+            <li className={css.friendListItem} key={friend.id}>
               <FriendListItem {...friend} />
             </li>
           );

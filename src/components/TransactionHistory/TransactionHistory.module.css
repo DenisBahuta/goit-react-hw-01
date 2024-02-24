@@ -1,0 +1,37 @@
+.transactionContainer {
+  margin: 20px auto;
+  border-top: 2px solid rgb(119, 118, 118);
+  width: 100%;
+  padding: 20px 0;
+}
+
+.transactionTable {
+  table-layout: fixed;
+  width: 100%;
+  border-collapse: collapse;
+  border: 2px solid black;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.transactionHead {
+  background-color: #000;
+  color: #fff;
+  font-size: 18px;
+}
+
+.transactionContent {
+  border: 2px solid black;
+  text-align: center;
+  font-size: 16px;
+  text-transform: capitalize;
+}
+
+.transactionRow:nth-child(even) {
+  background-color: rgb(206, 206, 206);
+}
+th,
+td {
+  padding: 0;
+  vertical-align: top;
+}

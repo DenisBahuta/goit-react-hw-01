@@ -1,0 +1,18 @@
+.friendListContainer {
+  margin-top: 24px;
+  /* разделяющая задания полоса */
+  border-top: 2px solid grey;
+}
+.friendListGallery {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  margin: 20px 0;
+}
+.friendListItem {
+  width: calc(100% / 5);
+  max-width: 140px;
+  border: 2px solid black;
+  border-radius: 6px;
+
+}
