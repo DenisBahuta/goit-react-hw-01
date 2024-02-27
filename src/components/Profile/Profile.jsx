@@ -1,10 +1,9 @@
 import css from "./Profile.module.css";
-import clsx from "clsx";
 import PropTypes from "prop-types";
 
 const Profile = ({ name, tag, location, image, stats }) => {
   return (
-    <div className={clsx(css.userProfile)}>
+    <div className={css.userProfile}>
       <div className={css.userInfo}>
         <img className={css.userAvatar} src={image} alt={name} />
         <p className={css.userName}>{name}</p>
